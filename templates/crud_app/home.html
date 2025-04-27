@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Welcome to My E-Commerce Site</h1>
+<p>Hello, {{ user.username }}! This is your dashboard.</p>
+<a href="{% url 'crud_app:product_list' %}" class="btn btn-primary">View Products</a>
+{% endblock %}
